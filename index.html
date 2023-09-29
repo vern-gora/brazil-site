@@ -10249,10 +10249,10 @@ href="#form"                      >Real Digital</a
                 form.addEventListener("submit", function (event) {
                     let phoneNumber = iti.getNumber();
                     
-                    // Перевірка кількості символів
                     if (phoneNumber.length !== 13) {
-                        alert("O número de telefone deve conter 13 caracteres.");
-                        event.preventDefault();
+                      event.preventDefault();
+                      input.style.border = "1.5px solid red";
+                      alert("O número de telefone deve conter 13 caracteres.");
                     }
                 });
               </script>
